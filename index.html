@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spot My Brew - Beer Repository</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Spot My Brew</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Add Beer</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="filter-section">
+      <h2>Filter Beers</h2>
+      <form>
+        <input type="text" placeholder="Search by beer name">
+        <select>
+          <option value="">All Origins</option>
+          <option value="USA">USA</option>
+          <option value="Germany">Germany</option>
+          <option value="Belgium">Belgium</option>
+          <!-- Add more options based on available origins -->
+        </select>
+        <select>
+          <option value="">All Colors</option>
+          <option value="Light">Light</option>
+          <option value="Amber">Amber</option>
+          <option value="Dark">Dark</option>
+          <!-- Add more options based on available colors -->
+        </select>
+        <!-- Add more filter options such as ABV and IBU -->
+        <button type="submit">Apply Filters</button>
+      </form>
+    </section>
+
+    <section id="beer-cards-section">
+      <h2>Beer Repository</h2>
+      <div class="beer-cards">
+        <!-- Generate beer cards dynamically based on data -->
+        <div class="beer-card">
+          <h3>Beer Name</h3>
+          <p>Brewery: <span>Brewery Name</span></p>
+          <p>Origin: <span>Origin Name</span></p>
+          <p>Color: <span>Color Name</span></p>
+          <p>ABV: <span>Alcohol By Volume</span></p>
+          <p>IBU: <span>International Bitterness Units</span></p>
+          <p>Description: <span>Beer description goes here.</span></p>
+        </div>
+        <!-- Repeat the beer card structure for each beer in the repository -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Spot My Brew. All rights reserved.</p>
+  </footer>
+</body>
+</html>
